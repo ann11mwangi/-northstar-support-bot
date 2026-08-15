@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Northstar Retail Co — Support</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="page">
+  <div class="page-copy">
+    <span class="eyebrow">Northstar Retail Co.</span>
+    <h1>Support, without the queue.</h1>
+    <p>Ask about an order, start a return, or check if something's in stock. The bot below handles it — no ticket required.</p>
+  </div>
+
+  <div class="widget" id="widget">
+    <header class="widget-header">
+      <div class="brand">
+        <span class="brand-mark">N</span>
+        <div>
+          <div class="brand-name">Northstar Support</div>
+          <div class="brand-status"><span class="dot"></span>Online — replies instantly</div>
+        </div>
+      </div>
+    </header>
+
+    <div class="messages" id="messages" aria-live="polite"></div>
+
+    <div class="quick-replies" id="quickReplies">
+      <button class="chip" data-intent="order_status">📦 Order status</button>
+      <button class="chip" data-intent="returns">🔄 Returns &amp; refunds</button>
+      <button class="chip" data-intent="stock">🔍 Stock check</button>
+    </div>
+
+    <form class="composer" id="composer">
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Type your question…"
+        autocomplete="off"
+      />
+      <button type="submit" aria-label="Send">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 12L21 3L14 21L11 13L3 12Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
